@@ -241,4 +241,10 @@ public class Teacher {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
+    public Object[] toArray(){
+        return new Object[]{this.id, this.name, this.sex, this.workUnit, this.address, this.phoneNumber, this.baseSalary, this.benefit,
+                this.livingAllowance, this.payable, this.telephoneFee, this.utilityFee, this.rent, this.incomeTax, this.hygieneFee,
+        this.providentFund, this.salary};
+    }
 }
