@@ -1,5 +1,8 @@
 package system.salary.teacher;
 
+import java.util.Arrays;
+import java.util.Vector;
+
 /**
  * @author: tunan
  * @version: v.1.0.1
@@ -246,5 +249,11 @@ public class Teacher {
         return new Object[]{this.id, this.name, this.sex, this.workUnit, this.address, this.phoneNumber, this.baseSalary, this.benefit,
                 this.livingAllowance, this.payable, this.telephoneFee, this.utilityFee, this.rent, this.incomeTax, this.hygieneFee,
         this.providentFund, this.salary};
+    }
+
+    public Vector toVector(){
+        return new Vector(Arrays.asList(new Object[]{this.id, this.name, this.sex, this.workUnit, this.address, this.phoneNumber, this.baseSalary, this.benefit,
+                this.livingAllowance, this.payable, this.telephoneFee, this.utilityFee, this.rent, this.incomeTax, this.hygieneFee,
+                this.providentFund, this.salary}));
     }
 }

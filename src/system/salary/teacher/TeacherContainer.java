@@ -2,6 +2,7 @@ package system.salary.teacher;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 /**
  * @author: tunan
@@ -51,5 +52,13 @@ public class TeacherContainer {
      */
     public List<Teacher> getTeachers() {
         return teachers;
+    }
+
+    public Vector toVectors(){
+        Vector vector = new Vector<>();
+        for (Teacher teacher : teachers) {
+            vector.add(teacher.toVector());
+        }
+        return vector;
     }
 }
